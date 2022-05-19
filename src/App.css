@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+.App{
+    position: relative;
+}
+.Navbar1{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.Navbar1 a {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px 5px;
+}
+.Navbar1 a:hover{
+    color: white;
+    background-color: grey;
+}
+.btn1{
+    border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+    padding: 8px 16px;
+  width: auto;
+  border: none;
+  outline: 0;
+}
+@media screen and (max-width:600px) {
+    .right{
+        display: none;
+    }
+}
+
+.tex{
+    position: absolute;
+    top:22%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card{
+    border-radius: 15px;
+    width: 280px;
+    height: 390px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.9);
+    transition: 0.3s  ease-in-out;
+    cursor: pointer;
+}
+.card div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height:inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.card div span{
+    position: absolute;
+    top: 20px !important;
+    padding: 8px 16px;
+    color:white;
+    background-color: black;
+}
+.mainArea{
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        place-items: center;
+}
+@media screen and (max-width: 1300px) {
+    .mainArea {
+      grid-template-columns: auto auto;
+    }
+    .tex{
+        position: absolute;
+        top:9%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .mainArea{
+      grid-template-columns: auto;
+    }
+    .tex{
+        position: absolute;
+        top:4%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+  }
